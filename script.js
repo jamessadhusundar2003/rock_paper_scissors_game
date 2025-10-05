@@ -17,6 +17,8 @@ const gameScore = JSON.parse(localStorage.getItem("Game score")) || {
     computer : 0
 }
 
+scoreDisplay.innerText = `You : ${gameScore.player} | Computer : ${gameScore.computer}`;
+
 function playGame(playerChoice) {
     let computerChoice = Math.floor(Math.random() * 3);
 
@@ -66,4 +68,5 @@ function resetScore() {
     localStorage.removeItem("Game score");
     resultDisplay.innerText = "Score has been reset!";
     scoreDisplay.innerText = `You : ${gameScore.player} | Computer : ${gameScore.computer}`;
+
 }
