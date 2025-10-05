@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+
+    width: 100vw;
+
+    background-color: black;
+}
+
+header h1 {
+    color: white;
+    font-family: "Bytesized", sans-serif;
+    font-size: 50px;
+
+    margin-left: 75px;
+}
+
+header button {
+    background-color: red;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    height: 100%;
+    width: 110px;
+    cursor: pointer;
+}
+
+header button:hover {
+    background-color: black;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.result-display {
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.score-display {
+    font-size: 20px;
+    font-weight: bold;
+
+    margin-bottom: 150px;
+}
+
+.game-buttons button {
+    background-color: black;
+    color: white;
+    font-family: "Bytesized", sans-serif;
+    font-size: 30px;
+    border: none;
+    height: 50px;
+    width: 150px;
+    margin-left: 8px;
+    margin-right: 8px;
+    padding-left: 5px;
+    cursor: pointer;
+}
+
+.game-buttons button:hover {
+    background-color: red;
+}
+
+footer {
+    display: flex;
+    justify-content: end;
+
+    height: 60px;
+    width: 100vw;
+}
+
+footer button {
+    background-color: red;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    height: 100%;
+    width: 110px;
+    cursor: pointer;
+}
+
+footer button:hover {
+    background-color: black;
+}
+
+/* --DARK THEME-- */
+
+.dark-theme {
+    background-color: black;
+    color: white;
+}
+
+.dark-theme header {
+    background-color: white;
+}
+
+.dark-theme header h1 {
+    color: black;
+}
+
+.dark-theme main button {
+    background-color: white;
+    color: black;
+}
+
+.dark-theme main button:hover {
+    color: white;
+}
+
+@media (max-width : 900px) {
+    body {
+        height: 90vh;
+    }
+    
+    header h1 {
+        font-size: 30px;
+        margin-left: 40px;
+    }
+
+    header button {
+        font-size: 12px;
+        width: 100px;
+    }
+
+    .result-display {
+        font-size: 20px;
+    }
+
+    .score-display {
+        font-size: 15px;
+        margin-bottom: 300px;
+    }
+
+    .game-buttons button {
+        font-size: 21px;
+        height: 50px;
+        width: 110px;
+        margin-left: 4px;
+        margin-right: 4px;
+    }
+
+    footer {
+        height: 60px;
+    }
+
+    footer button {
+        font-size: 12px;
+        width: 80px;
+    }
+}
